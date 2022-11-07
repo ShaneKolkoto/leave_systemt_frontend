@@ -182,6 +182,8 @@ export default {
           .then((data) => {
             if (data.status === 200) {
               this.user = data.data;
+            } else {
+              this.user = null;
             }
           });
       }

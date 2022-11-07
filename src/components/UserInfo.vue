@@ -37,7 +37,7 @@
     </v-col>
 
     <v-col cols="12" md="6">
-      <v-row><h4 class="text--white mb-2">History</h4></v-row>
+      <v-row><h4 class="white--text text-center mb-2">History</h4></v-row>
       <v-row>
         <table class="table table-bordered" id="history">
           <thead>
@@ -45,6 +45,7 @@
               <th>#</th>
               <th>Start Dates</th>
               <th>End Dates</th>
+              <th>Leave Type</th>
               <th>Total Amount of days</th>
             </tr>
           </thead>
@@ -53,6 +54,7 @@
               <td>{{ index + 1 }}</td>
               <td>{{ moment(leave.start_date).format("YYYY-MM-DD") }}</td>
               <td>{{ moment(leave.end_date).format("YYYY-MM-DD") }}</td>
+              <td>{{ leave.leave_type }}</td>
               <td>{{ leave.amount_of_days }}</td>
             </tr>
           </tbody>

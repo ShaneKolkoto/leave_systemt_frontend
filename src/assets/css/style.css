@@ -136,3 +136,7 @@ h1.number {
     color: #2c3e50;
   }
 }
+
+a {
+  text-decoration: none;
+}
